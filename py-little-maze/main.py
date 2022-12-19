@@ -321,7 +321,7 @@ if __name__ == '__main__':
     )
     themenumber = 0
 
-    with open(themes[0], 'r') as themefile:
+    with open('../themes/' + themes[0], 'r') as themefile:
         settings = SimpleNamespace(**json.loads(themefile.read()))
 
 
@@ -329,7 +329,7 @@ if __name__ == '__main__':
         global settings, themenumber
         themenumber = (themenumber + 1) % len(themes)
 
-        with open(themes[themenumber], 'r') as theme_file:
+        with open('../themes/' + themes[themenumber], 'r') as theme_file:
             settings = SimpleNamespace(**json.loads(theme_file.read()))
 
     Game().loop()
