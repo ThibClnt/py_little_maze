@@ -15,9 +15,7 @@ The game supports several themes between which you can switch by pressing space.
 .json file in the theme directory, and adding its path in the tuple themes of the `main` function (main.py)
 
 
-<img alt="light theme" src="screenshots/light_theme.png" title="light theme" width="33%"/>
-<img alt="darkt theme" src="screenshots/dark_theme.png" title="darkt theme" width="33%"/>
-<img alt="marine theme" src="screenshots/marine_theme.png" title="marine theme" width="33%"/>
+<img alt="light theme" src="screenshots/light_theme.png" title="light theme" width="33%"/><img alt="darkt theme" src="screenshots/dark_theme.png" title="darkt theme" width="33%"/><img alt="marine theme" src="screenshots/marine_theme.png" title="marine theme" width="33%"/>
 <i> Light, dark and marine themes </i>
 
 ## Configuring size
