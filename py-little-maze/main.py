@@ -6,9 +6,9 @@ from maze_utils import generate_maze, resolve_maze
 
 
 class Game:
-    MAP_SIZE = (40, 20)
-    MAP_WALL_WIDTH = 3
-    PATH_WIDTH = 10
+    MAP_SIZE = (40, 40)
+    MAP_WALL_WIDTH = 2
+    PATH_WIDTH = 5
     FRAME_RATE = 60
     TOP_SPACE = 120
     MARGIN = 5
@@ -317,7 +317,7 @@ if __name__ == '__main__':
     themes = (
         "light_theme.json",
         "dark_theme.json",
-        "deep_blue_theme.json"
+        "marine_theme.json"
     )
     themenumber = 0
 
