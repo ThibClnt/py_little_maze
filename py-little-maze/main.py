@@ -1,4 +1,5 @@
 import json
+import os
 
 import pygame
 from types import SimpleNamespace
@@ -314,11 +315,7 @@ class Player:
 
 
 if __name__ == '__main__':
-    themes = (
-        "light_theme.json",
-        "dark_theme.json",
-        "marine_theme.json"
-    )
+    themes = (tuple(os.walk('../themes/'))[0][2])
     themenumber = 0
 
     with open('../themes/' + themes[0], 'r') as themefile:
@@ -330,6 +327,7 @@ if __name__ == '__main__':
         themenumber = (themenumber + 1) % len(themes)
 
         with open('../themes/' + themes[themenumber], 'r') as theme_file:
-            settings = SimpleNamespace(**json.loads(theme_file.read()))
+            settings = SimpleNamespace(**settings.__dict__)
+            settings.__dict__.update(**json.loads(theme_file.read()))
 
     Game().loop()
