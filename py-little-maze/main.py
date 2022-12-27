@@ -144,7 +144,7 @@ class Game:
         self.player.move_to(*self.map.start)
 
     def resolve(self):
-        self.map.resolve()
+        self.map.resolve((self.player.x, self.player.y))
 
 
 class Button:
@@ -276,11 +276,11 @@ class Map:
                 raise e
             t += 1
 
-    def resolve(self):
+    def resolve(self, player_pos):
         if self.resolution_drawn:
             self.resolution_lines.clear()
         else:
-            path = resolve_maze(self.map)
+            path = resolve_maze(self.map, player_pos)
             for i in range(len(path) - 1):
                 self.resolution_lines.append((*path[i], *path[i + 1]))
 

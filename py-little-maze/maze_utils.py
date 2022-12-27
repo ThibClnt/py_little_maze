@@ -52,13 +52,9 @@ def generate_maze(size=(20, 20)):
     return maze
 
 
-def resolve_maze(maze):
-    return dfs(maze)
-
-
-def dfs(maze):
+def resolve_maze(maze, start):
     width, height = len(maze[0]), len(maze)
-    stack = [(0, 0)]
+    stack = [start]
     p = []
     visited_cells = set()
 
