@@ -2,7 +2,7 @@
 
 ## The game
 
-By double clicking the py-little-maze/main.py file, you will discover a new wor.. no. It is just a little game made with
+By double clicking the py-little-maze/main.py file, you will discover a new world... Not really. It is just a little game made with
 pygame, which generates mazes of configurable size, as many times as you want. Once you resolved the maze, another one
 is automatically generated. If this is too hard, you can click 'Resolve' to see the solution appear.
 
